@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Hot Dog´s el compadre
+        </title>
+        <script src="scripts javascript/CambiodePaginas2.js"></script>
+        <script src="scripts javascript/pedidosFunciones.js"></script>
+        <link rel="stylesheet" href="./estilos.css">
+    </head>
+    <body>
+        
+        <div class="contenedor">
+            <div class="barraP" >
+                <p class="contenedor-p" onclick="dirInicio();">Inicio</p>
+                <p class="contenedor-p" onclick="dirPedido();">Generar pedido</p>
+                <p class="contenedor-p" onclick="dirPedido2();">Editar Productos</p>
+                <p class="contenedor-p" onclick="dirPromociones();">Promociones</p>
+                <p class="contenedor-p" onclick="dirContacto();">Contactanos</pl>
+                <p onclick="dirRegistro();">Iniciar sesion</p>
+            </div>
+        </div>
+        <div class="contenedor2" >
+            <div class ="menu">
+                <h2 class="menu-group-heading" >
+                    Tickett
+                    <table border="1">
+                        <tr>
+                            <td><h3>Total</h3></td>
+                            <td><p id="total">0</p></td>
+                        </tr>
+                    </table>
+                </h2>
+                <div class="menu-group">
+                    
+                    <div class="menu-item">
+                        
+                        <!--//5El script se ejecuta una vez que se clickea cualquiera de las imagenes y suma su precio al total--> 
+                        <img class="menu-item-image"  onclick="sumar(115);" src="imagenes/ordendealitas.jpg" alt="Alitas">
+                    <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">Alitas con Papas</span>
+                        <span class="menu-item-price">115.00 MXN</span>
+                    </h3>
+                    <p class="menu-item-description">
+                        De 12 a 15 piezas de alitas de pollo bañadas en salsa a elegir(Tradicional. BBQ, mango o tamarindo), con papas fritas, zanahoria, apio, aderezo de la casa, ranch y chipottle.
+                    </p> 
+                    </div>
+
+                    </div>
+                    <div class="menu-item">
+                        <img class="menu-item-image" onclick="sumar(103);" src="imagenes/hamburguesapollo.jpg" alt="hamburguesapollo">
+                    <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">Hamburguesa de Pollo</span>
+                        <span class="menu-item-price">103.00 MXN</span>
+                    </h3>
+                    <p class="menu-item-description">
+                        Una hamburguesa con una carne, pollo empánizado, salchicha, lechuga, tomate, cebolla y mayonesa.
+                    </p> 
+                    </div>
+
+                    </div>
+                    <div class="menu-item">
+                        <img class="menu-item-image" onclick="sumar(47);" src="imagenes/dogosencillo.jpg" alt="dogosencillo">
+                    <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">Dogo tradicional</span>
+                        <span class="menu-item-price">47.00 MXN</span>
+                    </h3>
+                    <p class="menu-item-description">
+                        Un dogo con cebolla, lechuga, tomate, mayonesa y salchicha rosarito envuelta en tocino.
+                    </p> 
+                    </div>
+
+                    </div>
+                    <div class="menu-item">
+                        <img class="menu-item-image" onclick="sumar(100);" src="imagenes/ensaladalambre.jpg" alt="Ensalada-alambre">
+                    <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">Ensalada Alambre</span>
+                        <span class="menu-item-price">100.00 MXN</span>
+                    </h3>
+                    <p class="menu-item-description">
+                        Una ensalada con carne asada, chile verde, queso asadero, lechuga orejona, col, pepino, zanahoria, tomate, fritura o croton. Aderezo Ranch y chipotle.
+                    </p> 
+                    </div>
+
+                    </div>
+
+                </div>
+            
+                <h2 class="menu-group-heading">
+                    Populares
+                </h2>
+                <div class="menu-group">
+                        <div class="menu-item">
+                            <img class="menu-item-image" onclick="sumar(70);" src="imagenes/dogoboneless.jpg" alt="Dogoboneless">
+                        <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Dogoboneless</span>
+                            <span class="menu-item-price">70.00 MXN</span>
+                        </h3>
+                        <p class="menu-item-description">
+                            Un dogo tradicional al estilo del compadre acompañado de bonelesss con salsa a elegir.
+                        </p> 
+                        </div>
+
+                        </div>
+                        <div class="menu-item">
+                            <img class="menu-item-image" onclick="sumar(135);" src="imagenes/burguerC.png" alt="burguerC">
+                        <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name">Hamburquesa El Compadre</span>
+                            <span class="menu-item-price">135.00 MXN</span>
+                        </h3>
+                        <p class="menu-item-description">
+                            Hamburguesa de doble carne de diezmillo, queso asadero, tocino, papas sazonadas, salchicha, lechuga, tomate, cebolla, mayonesa.
+                        </p> 
+                        </div>
+
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

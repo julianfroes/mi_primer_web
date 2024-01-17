@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Hot Dog´s el compadre
+        </title>
+        <script src="scripts javascript/CambiodePaginas2.js"></script>
+        <link rel="stylesheet" href="./estilos.css">
+    </head>
+    <body>
+        
+        <div class="contenedor">
+            <div class="barraP" >
+                <p class="contenedor-p" onclick="dirInicio();">Inicio</p>
+                <p class="contenedor-p" onclick="dirPedido();">Generar pedido</p>
+                <p class="contenedor-p" onclick="dirPedido2();">Editar Productos</p>
+                <p class="contenedor-p" onclick="dirPromociones();">Promociones</p>
+                <p class="contenedor-p" onclick="dirContacto();">Contactanos</pl>
+                <p onclick="dirRegistro();">Iniciar sesion</p>
+            </div>
+        </div>
+        <div class="contenedor-Reloj">
+            <div class="barraP-Reloj">
+                <p id="horas" class="contenedor-pr"></p>
+                <p>:</p>
+                <p id="minutos" class="contenedor-pr"></p>
+                <p>:</p>
+                    <p id="ampm" class="contenedor-pr"></p>
+                    <p id="segundos" class="contenedor-pr"></p>
+                    <p id="diaSemana" class="diaSemana"></p>
+                    <p id="dia" class="dia"></p>
+                    <p>de </p>
+                    <p id="mes" class="mes"></p>
+                    <p>del </p>
+                    <p id="year" class="year"></p>
+            </div>
+            
+        </div>
+        
+        
+        <div class="contenedor2" >
+            <div class ="menu">
+                
+            
+                <h1 class="menu-group-heading" >
+                    Ofertas del dia de hoy
+                </h1>
+                <div >
+                        <div class="menu-item">
+                            <div class="fecha">
+                                <img id="promoimagenrotativa" class="imagen-fondo" src="" alt="Promo del dia">
+                            </div>
+                        <div class="menu-item-text">
+                        <h3 class="menu-item-heading">
+                            <span class="menu-item-name" id="nombreOferta">a</span>
+                            <span class="menu-item-price" id="precioOferta">b</span>
+                        </h3>
+                        <p class="menu-item-description" id="descripcionOferta">
+                            c
+                        </p> 
+                        </div>
+
+                        </div>
+                        
+                        
+                </div>
+            </div>
+        
+        
+       
+        
+        
+         <!--3 El reloj es una funcion recursiva para mantenerse actualizado -->
+          <!--4 El Hay otra funcion que le da un valor de direccion a la imagen segun el dia que sea para mostrar
+        la oferta del dia o en caso de que sea un dia sin ofertas solo muestra el horario en la imagen-->  
+        <script src="scripts javascript/funcionesReloj.js"></script>
+
+    </body>
+</html>
